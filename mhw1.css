@@ -1,0 +1,257 @@
+body{
+    background-color: rgb(243, 236, 197);
+
+    font-size:30px;
+}
+header{
+    background-image: url("https://www.almaphysio.com/wp-content/uploads/breakfast-in-barcelona-1080x675.jpeg");
+    background-size: cover;
+
+    font-family: 'Times New Roman', serif;
+    font-size: 3em;
+    font-weight: 800px;
+    color:white;
+
+    height: 250px;
+    position: relative;
+}
+
+header #overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, .3);
+
+    position:absolute;
+    top:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+}
+
+header #titolo{
+    background-color: brown;
+    
+    text-align: center;
+    border-radius: 20%;
+}
+
+#profile{
+    margin-top:-29px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: medium;
+}
+
+#profile img{
+    z-index:1;
+    border:2px solid black;
+    width:58px;
+}
+
+#menu{
+    display:none;
+}
+
+#menu div{
+    width: 25px;
+    height: 3px;
+
+    background-color: brown;
+
+    margin: 5px 3px;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 50px;
+
+    background-color: wheat;
+
+    font-family: Arial, sans-serif;
+    font-size: .6em;
+    font-style: bold;
+}
+
+nav a{
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    line-height: 60%;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+
+    color: black;
+    text-align: center;
+
+    font-weight: 300;
+}
+
+section img{
+    width: 70%;
+    border:2px solid black;
+}
+
+#indice{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    color: brown;
+    font-size: 1.6em;
+
+    margin:2px;
+    width: 5%;
+}
+
+#contenuti{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin:1px;
+    line-height: 1.5;
+    width:55%;
+}
+
+#contenuti .colazione{
+    font-size: 0.8em;
+}
+
+#contenuti .ricetta{
+    font-size: 0.6em;
+}
+
+#contenuti .ricetta .occorrente{
+    color:brown;
+    font-size: 1.2em;
+}
+
+#sezione1{
+    background-color: pink;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px;
+    padding: 10px;
+    height: 40%;
+    border: 4px solid hotpink;
+    border-radius: 2px;
+
+    font-family: 'Roboto',sans-serif;
+}
+
+#sezione2{
+    background-color: bisque;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin:20px;
+    padding: 10px;
+    height: 40%;
+    border:4px solid brown;
+    border-radius: 4px;
+
+    font-family:'Red Hat Mono',sans-serif ;
+}
+
+#sezione3{
+    background-color: lightskyblue;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin:20px;
+    padding: 10px;
+    height: 40%;
+    border: 4px solid blue;
+    border-radius: 6px;
+
+    font-family: 'Oswald',sans-serif;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+
+    background-color: wheat;
+
+    color: black;
+    font-size: 0.7em;
+    font-weight: 600;
+    font-style: oblique;
+    font-family: Georgia, serif;
+
+    height:67px;
+    border-top: 1px solid black;
+    margin: 0%;
+}
+
+
+
+@media (max-width: 600px){
+    body{
+        margin: 0 2px;
+        font-size:15px;
+    }
+
+    nav a{
+        display:none;
+    }
+
+    nav{
+        justify-content: flex-end;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #contenuti{
+        line-height: 1;
+        width:100%;
+        font-size:25px;
+    }
+
+    #sezione1{
+        padding:1px;
+    }
+
+    #sezione2{
+        padding:1px;
+    }
+
+    #sezione3{
+        padding:1px;
+    }
+
+    section img{
+        width:90%;
+        height: 40%;
+    }
+
+    #profile{
+        margin-top: -10%;
+    }
+
+    #profile img{
+        width:13%;
+    }
+}
